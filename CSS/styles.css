@@ -99,6 +99,9 @@ margin-left: auto;
 .auth-nav .link.current {
     color: var(--accent) 
 }
+.auth-nav .icon {
+  margin-right: 10px;
+}
 
 /* Site nav */
 .site-nav {
@@ -134,9 +137,22 @@ margin-left: auto;
       }
   .hero {
     background-color: #2F303A;
-    text-align: center;
-    
+    text-align: center;    
 }
+
+.overlay {
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color: #c4c4c4;
+background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url("../images/Image_Overlay_conv.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding: 200px 0px;
+}
+
 .hero-title {
     min-width: 700 px;
     margin-right: auto;
@@ -221,6 +237,16 @@ margin-left: auto;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+    }
+
   .works {    
     padding: 94px 0px;
   }
@@ -259,6 +285,16 @@ margin-left: auto;
       text-align: center;
       letter-spacing: 0.03em;
   }
+
+  .works-example {
+    display: block
+  }
+  .works-example:hover,
+  .works-example:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   .team-iteam {
     display: flex
   }
@@ -271,6 +307,7 @@ margin-left: auto;
   }
   .team-list {
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
   .team-list:last-child {
     margin-right: 0px;
@@ -306,6 +343,41 @@ margin-left: auto;
     letter-spacing: 0.03em;
     text-align: center;
   }
+
+  .social-network-list {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding: 0px 32px;
+  }
+
+  .social-network-item{
+    width: 44px;
+    height: 44px;
+  }
+  .social-network-item:not(:last-child){
+    margin-right: 10px;
+  }
+
+  .social-network-link{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-radius: 50%;
+  color: #AFB1B8;  
+  }
+
+  .social-network-pict {
+    fill:currentColor;
+    width: 20px;
+    height: 20px;
+  }
+  .social-network-link:hover,
+  .social-network-link:focus {
+    color: red;
+  }
+
   .works-convert {
     display: flex;
     flex-wrap: wrap;
@@ -340,9 +412,58 @@ margin-left: auto;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    
+    color: var(--primary-text-color);    
  }
+
+ .clients-section {
+   padding: 94px 0px;
+   }
+
+   .clients-title {
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display:flex;
+}
+
+.client-logo{
+  fill: currentColor;
+}
+
+.clients-list .item:not(:last-child){
+  margin-right: 30px;
+  }
+  .clients-list .item {
+    width: 170px;
+    height: 90px;
+  }
+ 
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  color: var(--primary-text-color);
+  width: 100%;
+  height: 100%;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent); 
+}
+}
+ 
  .catalogue {
    padding: 94px 0px;
  }
@@ -384,4 +505,56 @@ text-decoration: none;
    display: flex;
    flex-direction: column;
  }
+
+ .lets {
+   display: block;
+   width: 206px;
+   height: 80px;
+   margin-left: 70px;
+ }
  
+ .lets p {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+ }
+
+ .footter-network-list {
+   display:flex;
+   justify-content: space-between;
+ }
+
+ .footter-network-list .item {
+  width: 44px;
+  height: 44px;
+ }
+
+ .footter-network-list .item:not(:last-child){
+   margin-right: 10px;
+ }
+
+ .footter-network-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   width: 100%;
+   height: 100%;
+   color: #ffffff;
+   background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ .footter-network-icon {
+   width: 20px;
+   height:20px;
+   fill:curr;
+ }
+
+ .footter .container {
+   display: flex;
+ }
